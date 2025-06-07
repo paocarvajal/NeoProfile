@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoProfile S.A. de C.V. - Investment Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Color Palette: Olive Green Palette -->
+    <!-- NO SVG USED. NO MERMAID JS USED. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .flow-arrow {
+            color: #556B2F; /* Dark Olive Green */
+            font-size: 2rem;
+            line-height: 1;
+        }
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .financial-table th, .financial-table td {
+            padding: 0.75rem 1rem;
+            white-space: nowrap;
+        }
+        .financial-table th {
+            text-align: left;
+            background-color: #e2e8f0;
+            font-weight: 600;
+        }
+        .financial-table tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .financial-table tbody tr:hover {
+            background-color: #eff6ff;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-[#556B2F] text-white text-center py-12 px-4">
+        <h1 class="text-4xl md:text-6xl font-black uppercase text-shadow">NeoProfile S.A. de C.V.</h1>
+        <p class="text-xl md:text-2xl mt-4 font-light text-shadow">This isn't our first venture. It's our best one.</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-12">
+
+        <section id="opportunity" class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-[#556B2F] mb-4">An Unmatched Investment Opportunity</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-8">
+                We are reuniting a proven, market-dominant team to capture the underserved PVC profile market in Mexico and Latin America. We combine unparalleled expertise with a lean, profitable business model to deliver exceptional returns.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#CD853F]">
+                    <h3 class="text-4xl font-extrabold text-[#556B2F]">$550,000</h3>
+                    <p class="text-gray-600 mt-2">Total Investment Seek</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#B8860B]">
+                    <h3 class="text-4xl font-extrabold text-[#556B2F]">35%</h3>
+                    <p class="text-gray-600 mt-2">Equity Offered</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#8B8844]">
+                    <h3 class="text-4xl font-extrabold text-[#556B2F]">26.56%</h3>
+                    <p class="text-gray-600 mt-2">Projected 3-Year ROI</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                 <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-6">The Elite Founding Team</h2>
+                 <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Our leadership has an unmatched track record of scaling ventures from $0 to $20M ARR. This proven synergy is our greatest asset.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-5xl mb-3">👜</div> <!-- Changed to women's handbag emoji -->
+                        <h3 class="text-xl font-bold text-[#556B2F]">Paola Carvajal</h3>
+                        <p class="text-gray-600">Founder & CEO</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl mb-3">💼</div>
+                        <h3 class="text-xl font-bold text-[#8B8844]">Gustavo Ramirez</h3>
+                        <p class="text-gray-600">Sales Director</p>
+                    </div>
+                    <div>
+                        <div class="text-5xl mb-3">💼</div>
+                        <h3 class="text-xl font-bold text-[#A2B963]">Enrique Perez</h3>
+                        <p class="text-gray-600">Technical Support Architect</p>
+                    </div>
+                </div>
+                <div class="text-center mt-6">
+                    <p class="text-gray-600">Additional key team members, <span class="font-bold">Veronica Martinez</span> (Administrative Lead) and <span class="font-bold">Karen Hernandez</span> (Warehouse Operations Lead), bring invaluable loyalty and expertise, ensuring seamless operations from day one.</p>
+                    <p class="text-gray-600 mt-2 font-bold">Ownership Breakdown: Investor Group (35%)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="market-analysis" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Competitive Landscape: A Market Ripe for Disruption</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                         <p class="text-gray-600 mb-4">The current market is fragmented among several key players. While established, they lack our team's unique combination of agility, deep technical expertise, and customer-centric focus. Our analysis shows that a significant portion of the market (41%) is held by smaller players or is otherwise available, presenting a clear opportunity for NeoProfile to rapidly gain significant share. We will start with a solid base of 15 key customers.</p>
+                        <p class="text-gray-600 font-semibold">We are not just entering the market; we are poised to redefine it by setting a new standard for quality, reliability, and partnership.</p>
+                    </div>
+                    <div class="chart-container max-w-md">
+                        <canvas id="marketShareChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="business-model" class="mb-16">
+             <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Our Streamlined Business Model</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-10">
+                    We've engineered a highly efficient supply chain, from global sourcing to local delivery. This model minimizes overhead, ensures consistent supply, and allows us to deliver superior value to our B2B fabricator partners.
+                </p>
+                <div class="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-4">
+                    <div class="flex flex-col items-center">
+                        <div class="text-6xl mb-2">🇹🇷</div>
+                        <h3 class="font-bold text-lg">1. Sourcing from VERATEC</h3>
+                        <p class="text-sm text-gray-600 max-w-xs">Procure high-quality PVC profiles & hardware in Turkey.</p>
+                    </div>
+                    <div class="transform md:rotate-0 rotate-90 flow-arrow">➔</div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-6xl mb-2">🚢</div>
+                        <h3 class="font-bold text-lg">2. Sea Freight & Logistics</h3>
+                        <p class="text-sm text-gray-600 max-w-xs">Import via Veracruz Port and transport to Puebla warehouse. (2-month lead time)</p>
+                    </div>
+                     <div class="transform md:rotate-0 rotate-90 flow-arrow">➔</div>
+                    <div class="flex flex-col items-center">
+                        <div class="text-6xl mb-2">🏢</div>
+                        <h3 class="font-bold text-lg">3. B2B Distribution</h3>
+                        <p class="text-sm text-gray-600 max-w-xs">Sell to a starting base of 15 fabricators across Latin America.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="income-statement" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Projected Income Statement (Estado de Resultados) - USD</h2>
+            <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">This statement highlights our revenue generation, cost of goods sold, and operating expenses over five years, projecting a strong growth trajectory and increasing profitability. Note the significant investment in Year 3 to bolster our capabilities.</p>
+            <div class="bg-white p-8 rounded-lg shadow-lg table-container">
+                <table class="w-full financial-table border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-300">
+                            <th>Line Item</th>
+                            <th>Year 1 (Jul 25 - Jun 26)</th>
+                            <th>Year 2 (Jul 26 - Jun 27)</th>
+                            <th>Year 3 (Jul 27 - Jun 28)</th>
+                            <th>Year 4 (Jul 28 - Jun 29)</th>
+                            <th>Year 5 (Jul 29 - Jun 30)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">NET SALES</td>
+                            <td>$1,250,000</td>
+                            <td>$1,625,000</td>
+                            <td>$2,193,750</td>
+                            <td>$2,742,188</td>
+                            <td>$3,290,625</td>
+                        </tr>
+                        <tr>
+                            <td>(-) Cost of Goods Sold (65%)</td>
+                            <td>$812,500</td>
+                            <td>$1,056,250</td>
+                            <td>$1,425,938</td>
+                            <td>$1,782,422</td>
+                            <td>$2,138,906</td>
+                        </tr>
+                        <tr class="font-bold border-b border-gray-300">
+                            <td>GROSS PROFIT (35%)</td>
+                            <td>$437,500</td>
+                            <td>$568,750</td>
+                            <td>$767,812</td>
+                            <td>$959,766</td>
+                            <td>$1,151,719</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">OPERATING EXPENSES</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>• Payroll</td>
+                            <td>$130,769</td>
+                            <td>$130,769</td>
+                            <td>$150,384</td>
+                            <td>$157,904</td>
+                            <td>$165,800</td>
+                        </tr>
+                        <tr>
+                            <td>• Warehouse Rent</td>
+                            <td>$31,000</td>
+                            <td>$31,000</td>
+                            <td>$31,000</td>
+                            <td>$31,000</td>
+                            <td>$31,000</td>
+                        </tr>
+                        <tr>
+                            <td>• Logistics (8%)</td>
+                            <td>$100,000</td>
+                            <td>$130,000</td>
+                            <td>$175,500</td>
+                            <td>$219,375</td>
+                            <td>$263,250</td>
+                        </tr>
+                        <tr>
+                            <td>• Marketing (0.6%)</td>
+                            <td>$7,692</td>
+                            <td>$9,750</td>
+                            <td>$13,163</td>
+                            <td>$16,453</td>
+                            <td>$19,744</td>
+                        </tr>
+                        <tr>
+                            <td>• Depreciation</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>$15,000</td>
+                            <td>$15,000</td>
+                            <td>$15,000</td>
+                        </tr>
+                        <tr class="font-bold border-b border-gray-300">
+                            <td>TOTAL OPEX</td>
+                            <td>$269,461</td>
+                            <td>$301,519</td>
+                            <td>$385,047</td>
+                            <td>$439,732</td>
+                            <td>$494,794</td>
+                        </tr>
+                        <tr class="font-bold">
+                            <td>OPERATING INCOME (EBIT)</td>
+                            <td>$168,039</td>
+                            <td>$267,231</td>
+                            <td>$382,765</td>
+                            <td>$520,034</td>
+                            <td>$656,925</td>
+                        </tr>
+                        <tr>
+                            <td>(-) Income Tax (30%)</td>
+                            <td>$50,412</td>
+                            <td>$80,169</td>
+                            <td>$114,830</td>
+                            <td>$156,010</td>
+                            <td>$197,078</td>
+                        </tr>
+                        <tr class="font-bold text-[#556B2F]">
+                            <td>NET PROFIT</td>
+                            <td>$117,627</td>
+                            <td>$187,062</td>
+                            <td>$267,935</td>
+                            <td>$364,024</td>
+                            <td>$459,847</td>
+                        </tr>
+                        <tr class="font-bold border-t border-gray-300">
+                            <td>EBITDA</td>
+                            <td>$168,039</td>
+                            <td>$267,231</td>
+                            <td>$397,765</td>
+                            <td>$535,034</td>
+                            <td>$671,925</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="balance-sheet" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Projected Balance Sheet (Balance General) - USD</h2>
+            <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">This snapshot of our financial position illustrates strong asset growth, maintained liquidity, and a solid equity base, reflecting our prudent financial management and reinvestment of profits.</p>
+            <div class="bg-white p-8 rounded-lg shadow-lg table-container">
+                <table class="w-full financial-table border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-300">
+                            <th>Line Item</th>
+                            <th>End of Year 1</th>
+                            <th>End of Year 2</th>
+                            <th>End of Year 3</th>
+                            <th>End of Year 4</th>
+                            <th>End of Year 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">ASSETS</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Current Assets:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Cash</td>
+                            <td>$563,460</td>
+                            <td>$734,272</td>
+                            <td>$623,357</td>
+                            <td>$923,771</td>
+                            <td>$1,320,008</td>
+                        </tr>
+                        <tr>
+                            <td>Accounts Receivable (10% of Sales, from Year 3)</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>$219,375</td>
+                            <td>$274,219</td>
+                            <td>$329,063</td>
+                        </tr>
+                        <tr>
+                            <td>Inventory (2 months COGS)</td>
+                            <td>$135,417</td>
+                            <td>$176,042</td>
+                            <td>$237,656</td>
+                            <td>$297,070</td>
+                            <td>$356,484</td>
+                        </tr>
+                        <tr class="font-bold border-b border-gray-300">
+                            <td>Total Current Assets</td>
+                            <td>$698,877</td>
+                            <td>$910,314</td>
+                            <td>$1,080,388</td>
+                            <td>$1,495,060</td>
+                            <td>$2,005,555</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Non-Current Assets:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Fixed Assets (Net)</td>
+                            <td>$50,000</td>
+                            <td>$50,000</td>
+                            <td>$185,000</td>
+                            <td>$170,000</td>
+                            <td>$155,000</td>
+                        </tr>
+                        <tr class="font-bold text-[#556B2F] border-b border-gray-300">
+                            <td>TOTAL ASSETS</td>
+                            <td>$748,877</td>
+                            <td>$960,314</td>
+                            <td>$1,265,388</td>
+                            <td>$1,665,060</td>
+                            <td>$2,160,555</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">LIABILITIES</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Current Liabilities:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Accounts Payable (10% of COGS)</td>
+                            <td>$81,250</td>
+                            <td>$105,625</td>
+                            <td>$142,594</td>
+                            <td>$178,242</td>
+                            <td>$213,891</td>
+                        </tr>
+                        <tr>
+                            <td>Income Tax Payable</td>
+                            <td>$50,412</td>
+                            <td>$80,169</td>
+                            <td>$114,830</td>
+                            <td>$156,010</td>
+                            <td>$197,078</td>
+                        </tr>
+                        <tr class="font-bold border-b border-gray-300">
+                            <td>Total Current Liabilities</td>
+                            <td>$131,662</td>
+                            <td>$185,794</td>
+                            <td>$257,424</td>
+                            <td>$334,252</td>
+                            <td>$410,969</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">EQUITY</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Share Capital</td>
+                            <td>$550,000</td>
+                            <td>$550,000</td>
+                            <td>$550,000</td>
+                            <td>$550,000</td>
+                            <td>$550,000</td>
+                        </tr>
+                        <tr>
+                            <td>Retained Earnings</td>
+                            <td>$67,215</td>
+                            <td>$224,520</td>
+                            <td>$457,964</td>
+                            <td>$780,808</td>
+                            <td>$1,199,586</td>
+                        </tr>
+                        <tr class="font-bold text-[#556B2F] border-b border-gray-300">
+                            <td>TOTAL EQUITY</td>
+                            <td>$617,215</td>
+                            <td>$774,520</td>
+                            <td>$1,007,964</td>
+                            <td>$1,330,808</td>
+                            <td>$1,749,586</td>
+                        </tr>
+                        <tr class="font-bold text-[#556B2F] border-t-2 border-gray-600">
+                            <td>TOTAL LIABILITIES & EQUITY</td>
+                            <td>$748,877</td>
+                            <td>$960,314</td>
+                            <td>$1,265,388</td>
+                            <td>$1,665,060</td>
+                            <td>$2,160,555</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="cash-flow" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Projected Cash Flow Statement (Estado de Flujo de Efectivo) - USD</h2>
+            <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">This statement details the movement of cash within NeoProfile, demonstrating our ability to generate positive cash flow from operations, strategically invest in growth, and maintain a healthy cash position throughout our expansion.</p>
+            <div class="bg-white p-8 rounded-lg shadow-lg table-container">
+                <table class="w-full financial-table border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-300">
+                            <th>Line Item</th>
+                            <th>Year 1 (Jul 25 - Jun 26)</th>
+                            <th>Year 2 (Jul 26 - Jun 27)</th>
+                            <th>Year 3 (Jul 27 - Jun 28)</th>
+                            <th>Year 4 (Jul 28 - Jun 29)</th>
+                            <th>Year 5 (Jul 29 - Jun 30)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">Cash Flow from Operating Activities</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Net Profit</td>
+                            <td>$117,627</td>
+                            <td>$187,062</td>
+                            <td>$267,935</td>
+                            <td>$364,024</td>
+                            <td>$459,847</td>
+                        </tr>
+                        <tr>
+                            <td>Depreciation</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>$15,000</td>
+                            <td>$15,000</td>
+                            <td>$15,000</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Changes in Working Capital:</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>(Increase) Decrease in Accounts Receivable</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>-$219,375</td>
+                            <td>-$54,844</td>
+                            <td>-$54,844</td>
+                        </tr>
+                        <tr>
+                            <td>(Increase) Decrease in Inventory</td>
+                            <td>-$135,417</td>
+                            <td>-$40,625</td>
+                            <td>-$61,614</td>
+                            <td>-$59,414</td>
+                            <td>-$59,414</td>
+                        </tr>
+                        <tr>
+                            <td>Increase (Decrease) in Accounts Payable</td>
+                            <td>$81,250</td>
+                            <td>$24,375</td>
+                            <td>$36,969</td>
+                            <td>$35,648</td>
+                            <td>$35,648</td>
+                        </tr>
+                        <tr class="font-bold border-b border-gray-300">
+                            <td>Net Cash from Operating Activities</td>
+                            <td>$63,460</td>
+                            <td>$170,812</td>
+                            <td>$39,085</td>
+                            <td>$300,414</td>
+                            <td>$396,237</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Cash Flow from Investing Activities</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Purchase of Fixed Assets</td>
+                            <td>-$50,000</td>
+                            <td>$0</td>
+                            <td>-$150,000</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr class="font-bold border-b border-gray-300">
+                            <td>Net Cash from Investing Activities</td>
+                            <td>-$50,000</td>
+                            <td>$0</td>
+                            <td>-$150,000</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Cash Flow from Financing Activities</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Equity Raised</td>
+                            <td>$550,000</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr class="font-bold border-b border-gray-300">
+                            <td>Net Cash from Financing Activities</td>
+                            <td>$550,000</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr class="font-bold">
+                            <td>Net Increase (Decrease) in Cash</td>
+                            <td>$563,460</td>
+                            <td>$170,812</td>
+                            <td>-$110,915</td>
+                            <td>$300,414</td>
+                            <td>$396,237</td>
+                        </tr>
+                        <tr>
+                            <td>Beginning Cash Balance</td>
+                            <td>$0</td>
+                            <td>$563,460</td>
+                            <td>$734,272</td>
+                            <td>$623,357</td>
+                            <td>$923,771</td>
+                        </tr>
+                        <tr class="font-bold text-[#556B2F]">
+                            <td>ENDING CASH BALANCE</td>
+                            <td>$563,460</td>
+                            <td>$734,272</td>
+                            <td>$623,357</td>
+                            <td>$923,771</td>
+                            <td>$1,320,008</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="equity-changes" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Projected Statement of Changes in Equity - USD</h2>
+            <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">This statement details the growth of our shareholder equity, driven by initial investment and robust retained earnings, underscoring the increasing intrinsic value of the company over time.</p>
+            <div class="bg-white p-8 rounded-lg shadow-lg table-container">
+                <table class="w-full financial-table border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-300">
+                            <th>Line Item</th>
+                            <th>Beginning Balance</th>
+                            <th>Equity Contribution</th>
+                            <th>Net Profit</th>
+                            <th>Ending Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Year 1</td>
+                            <td>$0</td>
+                            <td>$550,000</td>
+                            <td>$117,627</td>
+                            <td>$617,215</td>
+                        </tr>
+                        <tr>
+                            <td>Year 2</td>
+                            <td>$617,215</td>
+                            <td>$0</td>
+                            <td>$187,062</td>
+                            <td>$774,520</td>
+                        </tr>
+                        <tr>
+                            <td>Year 3</td>
+                            <td>$774,520</td>
+                            <td>$0</td>
+                            <td>$267,935</td>
+                            <td>$1,007,964</td>
+                        </tr>
+                        <tr>
+                            <td>Year 4</td>
+                            <td>$1,007,964</td>
+                            <td>$0</td>
+                            <td>$364,024</td>
+                            <td>$1,330,808</td>
+                        </tr>
+                        <tr>
+                            <td>Year 5</td>
+                            <td>$1,330,808</td>
+                            <td>$0</td>
+                            <td>$459,847</td>
+                            <td>$1,749,586</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="financial-summary" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Key Financial Insights & ROI</h2>
+            <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">Our projections demonstrate a financially robust and strategically sound business model, designed to deliver significant returns for our investors.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#CD853F]">
+                    <h3 class="text-2xl font-bold text-[#556B2F] mb-2">Return on Investment (ROI)</h3>
+                    <p class="text-gray-600 mb-4">For the investor, the option to cash out after 3 years presents an attractive return:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>**Year 3 EBITDA:** $397,765</li>
+                        <li>**Company Valuation (5x EBITDA):** $1,988,825</li>
+                        <li>**Investor Share Value (35%):** $696,089</li>
+                        <li>**Initial Investment:** $550,000</li>
+                        <li class="font-bold text-lg text-[#B8860B]">**Projected ROI:** 26.56%</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#8B8844]">
+                    <h3 class="text-2xl font-bold text-[#556B2F] mb-2">Critical Ratios</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>**Gross Profit Margin:** Consistently 35%</li>
+                        <li>**Operating Income (EBIT) Margin:** Grows from 13.4% (Y1) to 19.9% (Y5)</li>
+                        <li>**Net Profit Margin:** Improves from 9.4% (Y1) to 14.0% (Y5)</li>
+                        <li>**EBITDA Growth (Y2 to Y3):** A significant 48.8% increase, driven by strategic investment.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-[#A2B963]">
+                    <h3 class="text-2xl font-bold text-[#556B2F] mb-2">Key Financial Metrics</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>**Strong ROI:** A projected 26.56% Return on Investment within just three years is very compelling, especially given the initial investment amount. This indicates a high potential for capital appreciation.</li>
+                        <li>**Solid Profitability:** The consistent 35% Gross Profit margin and the steadily increasing Net Profit Margin (from 9.4% to 14.0% over five years) demonstrate a fundamentally healthy and profitable business model.</li>
+                        <li>**Significant EBITDA Growth:** The impressive 48.8% jump in EBITDA from Year 2 to Year 3 clearly illustrates the powerful impact of the strategic investment (lamination line, warehouse setup). This shows that the capital is being used to directly enhance operational efficiency and profitability.</li>
+                        <li>**Experienced Management:** The "Elite Founding Team" with a proven track record ($0 to $20M ARR) significantly de-risks the venture. Investors are often as keen on the team as they are on the numbers.</li>
+                        <li>**Clear Market Opportunity:** The infographic highlights a fragmented market with substantial "other" share, indicating ripe conditions for a disruptive and well-managed new entrant like NeoProfile.</li>
+                        <li>**Prudent Financial Management:** The decision to not offer sales credit for the first 18 months emphasizes a focus on cash flow and sustainable growth, which is reassuring to investors looking for financial stability.</li>
+                        <li>**Defined Exit Strategy:** The option for investors to cash out after 3 years provides clear liquidity, which is a key consideration for many investors.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="swot" class="mb-16">
+             <h2 class="text-3xl font-bold text-center text-[#556B2F] mb-8">Strategic Analysis: Strengths & Weaknesses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">💪 Strengths</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>**Elite Founding Team:** Rare combo of 30+ years commercial and 20+ years technical expertise.</li>
+                        <li>**Proven Scaling Ability:** Track record of growing ventures from $0 to over $20M ARR.</li>
+                        <li>**Market Gap Dominance:** Unmatched fulfillment rate and localized product formulations.</li>
+                        <li>**High-Profit Model:** 35-45% gross margins and a predictable 60% client repeat rate.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-red-600 mb-4">⛓️ Weaknesses & Mitigation</h3>
+                     <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>**Logistics Vulnerability:** Mitigated by diverse logistics partners and buffer inventory.</li>
+                        <li>**Pricing Volatility:** Managed through strategic bulk sourcing and supplier relations.</li>
+                        <li>**Client Diversification Needed:** Addressed with aggressive new client acquisition campaigns.</li>
+                        <li>**No Initial Credit:** We will prioritize cash flow for the first 18 months to build a rock-solid financial base.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer class="bg-[#556B2F] text-white text-center py-10 px-4">
+        <h2 class="text-3xl font-bold mb-4">Join Us in Building the Future</h2>
+        <p class="mb-6">NeoProfile is more than a company; it's a vehicle for market transformation. <br>We invite you to be part of our success story.</p>
+        <p class="font-semibold">Contact: Paola Carvajal, Founder</p>
+    </footer>
+
+    <script>
+        function wrapLabels(label, maxWidth) {
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).length > maxWidth) {
+                    lines.push(currentLine);
+                    currentLine = word;
+                } else {
+                    currentLine = currentLine ? currentLine + ' ' + word : word;
+                }
+            });
+            lines.push(currentLine);
+            return lines;
+        }
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            }
+            return label;
+        };
+        
+        // Updated Olive Green Palette with more distinct colors for the pie chart
+        const oliveGreenPalette = [
+            '#556B2F', // Dark Olive Green (Header, Main text, Sales line)
+            '#8B8844', // Darker Yellow-Green
+            '#A2B963', // Medium Green
+            '#CD853F', // Dark Orange/Brown (Accent 1, Net Profit line)
+            '#B8860B', // Dark Goldenrod (Accent 2)
+            '#6B8E23', // Olive Drab (Another green)
+            '#DDA0DD'  // Plum (for 'Other' in pie chart for contrast)
+        ];
+
+        window.onload = function() {
+            // Ensure canvas elements exist before trying to get context
+            const marketShareCanvas = document.getElementById('marketShareChart');
+            if (marketShareCanvas) {
+                const marketShareCtx = marketShareCanvas.getContext('2d');
+                new Chart(marketShareCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Aluplast', 'Rehau', 'Kömmerling', 'Salamander', 'Deceuninck', 'Tecnoperfiles', 'Other'],
+                        datasets: [{
+                            label: 'Market Share',
+                            data: [24, 17, 10, 5, 2, 1, 41],
+                            backgroundColor: [
+                                '#556B2F', // Aluplast - Dark Olive Green
+                                '#CD853F', // Rehau - Burnt Orange
+                                '#8B8844', // Kömmerling - Olive Drab
+                                '#4682B4', // Salamander - Steel Blue
+                                '#FFA07A', // Deceuninck - Light Salmon
+                                '#9ACD32', // Tecnoperfiles - Yellow Green
+                                '#DDA0DD'  // Other - Plum
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 2,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'right',
+                            },
+                            title: {
+                                display: true,
+                                text: 'Mexican PVC Profile Market Share (%)',
+                                font: { size: 16 }
+                            },
+                            tooltip: { callbacks: { title: tooltipTitleCallback } }
+                        }
+                    }
+                });
+            }
+
+            const financialsCanvas = document.getElementById('financialsChart');
+            if (financialsCanvas) {
+                const financialsCtx = financialsCanvas.getContext('2d');
+                new Chart(financialsCtx, {
+                    type: 'line',
+                    data: {
+                        labels: financialLabels,
+                        datasets: [{
+                            label: 'Net Sales (USD)',
+                            data: [1250000, 1625000, 2193750, 2742188, 3290625],
+                            borderColor: oliveGreenPalette[0], // Dark Olive Green
+                            backgroundColor: 'rgba(85, 107, 47, 0.1)', // Light transparent olive
+                            fill: true,
+                            tension: 0.1
+                        }, {
+                            label: 'Net Profit (USD)',
+                            data: [117627, 187062, 267935, 364024, 459847],
+                            borderColor: oliveGreenPalette[3], // A contrasting accent color
+                            backgroundColor: 'rgba(205, 133, 63, 0.1)', // Light transparent accent
+                            fill: true,
+                            tension: 0.1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: function(value, index, values) {
+                                        return '$' + (value / 1000000).toFixed(1) + 'M';
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            title: {
+                                display: true,
+                                text: 'Projected Revenue & Profit Growth (5 Years)',
+                                font: { size: 16 }
+                            },
+                            tooltip: { 
+                                callbacks: { 
+                                    title: tooltipTitleCallback,
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        if (context.parsed.y !== null) {
+                                            label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+                                        }
+                                        return label;
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                });
+            }
+        };
+    </script>
+</body>
+</html>
